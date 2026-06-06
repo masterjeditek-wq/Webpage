@@ -1,0 +1,34 @@
+{
+  "wongi_integration": {
+    "version": "2.0.0-Hatch",
+    "status": "ACTIVE",
+    "primary_endpoints": {
+      "wongi_main": "https://jeditek.net",
+      "wongi_community": "https://wongi.manus.space",
+      "wongi_vpn": "https://wongivpn-8kcreszh.manus.space",
+      "wongi_integrated": "https://jeditek.org"
+    },
+    "communications_grid": {
+      "encryption": "TLS_1.3_AES256",
+      "protocol": "WONGI_SECURE_CHANNEL",
+      "latency_target_ms": 100,
+      "bandwidth_limit_mbps": 1000
+    },
+    "bridge_components": {
+      "jeditek_vpn_browser": "https://jeditek-bro.manus.space",
+      "wongi_chat": "https://jedi-chat.manus.space",
+      "wongi_station": "https://jedi-station.manus.space"
+    },
+    "integration_with_smpo": {
+      "sync_enabled": true,
+      "bidirectional": true,
+      "conflict_resolution": "SMPO_PRIMARY"
+    },
+    "security": {
+      "authentication": "JEDI_Prime_Central",
+      "authorization": "Role_Based_Access_Control",
+      "audit_logging": "ENABLED",
+      "threat_detection": "REAL_TIME_IDS"
+    }
+  }
+}
